@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(246, 249, 253), rgb(218, 218, 218));
+}
+
+.header{
+    text-align: center;
+    padding: 4vh 0;
+    background-color: #222D3C;
+    color: white;
+    box-shadow: 0 0 10px 2px #222D3C;
+}
+
+#new-book{
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #4d90fc;
+    color: #0e131a;
+    border-radius: 0.4rem;
+    width: 150px;
+    box-shadow: 0 0 10px #123a72ab;
+    cursor: pointer;
+}
+
+#new-book:active {
+    transform: scale(0.9);
+    transition: 40ms;
+} 
+
+.new-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8vh 0;
+}
+
+.card {
+    background-color: rgb(247, 247, 247);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px  #222d3c85;
+    width: 20vw;
+    height: 25vh;
+    color: #222D3C;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+.shelves {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.card p {
+    font-weight: bold;
+    margin: 0.1rem;
+}
+
+
+
