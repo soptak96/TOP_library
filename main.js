@@ -13,15 +13,17 @@ let library = [
     },
 ];
 
-function Book(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = read;
-}
 
-Book.prototype.info = function() {
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.status}`
+class Book{
+    constructor(title,author,pages,read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.status = read;
+    }
+    info(){
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${this.status}`
+    }
 }
 
 // function addBookToLibrary() {
