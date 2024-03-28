@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="parent">
-        <div class="header">
-            <h1>My Library</h1>
-        </div>
-        <div class="new-button-container">
-            <button id="new-book">New Book</button>
-        </div>
-        <div class="shelves"></div>
+      <div class="header">
+        <h1>My Library</h1>
+      </div>
+      <div class="new-button-container">
+        <button id="new-book">New Book</button>
+      </div>
+      <div class="shelves"></div>
 
-        <div class="modal-container">
-            <dialog class="modal">
-                <form method="dialog">
-                    <label for="title">Title:</label>
-                    <input type="text" id="title" >
-                    <label for="author">Author:</label>
-                    <input type="text" id="author">
-                    <label for="pages">Pages:</label>
-                    <input type="number" id="pages" min="0">
-                    <label for="status">Status:</label>
-                    <div class="card-status">
-                        <input type="checkbox" name="status" id="status">
-                        <label id="status-txt" for="status"></label>
-                    </div>
-                    <div class="modal-btn">
-                        <button type="submit" id="submit">Submit</button>
-                        <button type="submit" id="cancel-btn">Cancel</button>
-                    </div>
-                    
-                </form>
-            </dialog>
-        </div>
+      <div class="modal-container">
+        <dialog class="modal">
+          <form class="add-book" method="dialog">
+            <label for="title">Title:</label>
+            <input type="text" id="title" required />
+            <label for="author">Author:</label>
+            <input type="text" id="author" required />
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages" min="0" required />
+            <label for="status">Status:</label>
+            <div class="card-status">
+              <input type="checkbox" name="status" id="status" />
+              <label id="status-txt" for="status"></label>
+            </div>
+            <div class="modal-btn">
+              <button type="submit" id="submit">Submit</button>
+              <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+          </form>
+        </dialog>
+      </div>
     </div>
-</body>
+  </body>
 </html>
